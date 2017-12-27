@@ -2,92 +2,21 @@
 
 [//]: # (Image References)
 
-[image1]: ./flow-diagram.png "Flow Chart"
-[image2]: ./system-architecture.png "System Architecture"
+[image1]: ./system-architecture.png "System Architecture"
 
 This project designs a Path Planner composed of a Vehicle, a Highway, a Behavior Planner and a Trajectory Planner to make smooth, comfortable, safe paths for a autonomous vehicle drives along a highway. It communicates with Udacity simulator to receive localization, sensor fusion data and transmit trajectory of the vehicle.The diagram below can be seen for overall system architecture:
 
 
-![System Architecture][image2]
+![System Architecture][image1]
 
 
-The finite state machine starts at the START state which determines speed limit and switches directly to CRUISE state. In this state the vehicle wants to keep its lane (preferably mid lane) and speed limit. If it get closer to slower vehicle than switches to TAIL state and follows the vehicle ahead. During this state the  vehicle keeps track of adjacent lanes to find opportunity to make a lane change. If there is then the vehicle swithes to LANECHANGE state and returns CRUISE state once lane change completed.
+## Trajectory Planner
 
+Spline fitting method has used to calculate upcoming path of the vehicle. Two prior waypoints have been added to a list with 3 upcoming waypoints which are from 30m, 60m and 90m ahead of the vehicle. Finally this list points with their y equivalent coordinates taken from highway map are fitted to spline. By so calculated spline function is used to lead the vehicle for upcoming waypoints. The Trajectory Planner achieves this fitting a spline [http://kluge.in-chemnitz.de/opensource/spline/] to the waypoints by using previous path of the vehicle and upcoming path of the vehicle until 30m ahead of it.
 
-![Flow Chart][image1]
+## Behavior Planner
 
-
-Event-1: IF the vehicle at CRUISE 
-         and 
-         ((vehicle at LeftLane and mid lane free) 
-         or
-         (vehicle at RightLane and mid lane free)) THEN
-         goes to LANECHANGE
-         
-Event-2: IF the vehicle at LANECHANGE 
-         and
-         ((vehicle at LeftLane and lane change not active) 
-         or
-         (vehicle at MidLane and lane change not active)
-         or
-         (vehicle at RightLane and lane change not active)) THEN
-         goes to CRUISE
-
-Event-3: IF the vehicle at CRUISE state 
-         and 
-         ((vehicle at LeftLane and mid lane blocked)
-         or
-         (vehicle at MidLane and mid lane free)
-         or
-         (vehicle at RightLane and mid lane blocked)) THEN
-         goes to CRUISE state
-         
-Event-4: IF the vehicle at TAIL
-         and
-         ((vehicle at LeftLane and mid lane free and left lane blocked) 
-         or 
-         (vehicle at MidLane and mid lane blocked and left lane free)
-         or 
-         (vehicle at RightLane and mid lane free and right lane blocked)) THEN
-         goes to LANECHANGE
-         
-Event-5: IF the vehicle at TAIL
-         and
-         ((vehicle at LeftLane and left lane free) 
-         or 
-         (vehicle at MidLane and mid lane free)  
-         or 
-         (vehicle at RightLane and right lane free)) THEN
-         goes to CRUISE state
-         
-Event-6: IF the vehicle at CRUISE
-         and
-         ((vehicle at LeftLane and left lane blocked) 
-         or 
-         (vehicle at MidLane and mid lane blocked)  
-         or 
-         (vehicle at RightLane and right lane blocked)) THEN
-         goes to TAIL state
-
-Event-7: IF the vehicle at TAIL
-         and 
-         ((vehicle at LeftLane and mid lane blocked and left lane blocked) 
-         or 
-         (vehicle at MidLane and mid lane blocked and left lane blocked)  
-         or 
-         (vehicle at RightLane and mid lane blocked and right lane blocked)) THEN
-         goes to TAIL
-
-Event-8: IF the vehicle at LANECHANGE
-         and
-         ((vehicle at LeftLane and lane change active) 
-         or
-         (vehicle at MidLane and lane change active)
-         or
-         (vehicle at RightLane and lane change active)) THEN
-         goes to LANECHANGE
-
-After each cycle of Behavior Planner run, target lane and target velocity passes to Trajectory Planner which calculates smooth and comfortable trajectories. The Trajectory Planner achieves this fitting a spline [http://kluge.in-chemnitz.de/opensource/spline/] to the waypoints by using previous path of the vehicle and upcoming path of the vehicle until 30m ahead of it. Here lane following can be done easily by using map data and Frenet coordinate system of it.
+This subsystem is responsible of given a decision for states like cruising, lane change or tailing by setting target lane and target velocity parameters. Via calculation of time to collision and costs for each lane the behavior planner decides which state the vehicle should be in. Time to collision is calculated according to distance in between egovehicle and nearest vehicle in that lane. Higher time to collision stands longer duration to an accident. Cost function is sum of lane flow speed and distance in between egovehicle and nearest vehicle in that lane. Slower lane and near tailing of upcoming vehicle leads to high cost for that lane and behavior planner decides target lane up to lowest cost and ensures to avoid an accident with high time to collision value.   
 
 --
 
