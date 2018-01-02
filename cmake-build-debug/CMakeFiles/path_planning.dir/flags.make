@@ -6,5 +6,5 @@ CXX_FLAGS = -Wall -DHAVE_CSTDDEF -O2 -march=native -g   -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/eren/Desktop/Path-Planning-make/src/Eigen-3.3 -I/usr/local/include -I/usr/local/opt/openssl/include 
+CXX_INCLUDES = -I/Users/eren/Desktop/Path-Planning/src/Eigen-3.3 -I/usr/local/include -I/usr/local/opt/openssl/include 
 
