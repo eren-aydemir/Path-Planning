@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/eren/Desktop/Path-Planning
+CMAKE_SOURCE_DIR = /Users/eren/Desktop/Path-Planning-Project-very-last
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/eren/Desktop/Path-Planning/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/eren/Desktop/Path-Planning-Project-very-last/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/path_planning.dir/depend.make
@@ -57,90 +57,18 @@ include CMakeFiles/path_planning.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/path_planning.dir/flags.make
 
-CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o: CMakeFiles/path_planning.dir/flags.make
-CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o: ../src/behavior_planner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eren/Desktop/Path-Planning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o -c /Users/eren/Desktop/Path-Planning/src/behavior_planner.cpp
-
-CMakeFiles/path_planning.dir/src/behavior_planner.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path_planning.dir/src/behavior_planner.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eren/Desktop/Path-Planning/src/behavior_planner.cpp > CMakeFiles/path_planning.dir/src/behavior_planner.cpp.i
-
-CMakeFiles/path_planning.dir/src/behavior_planner.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path_planning.dir/src/behavior_planner.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eren/Desktop/Path-Planning/src/behavior_planner.cpp -o CMakeFiles/path_planning.dir/src/behavior_planner.cpp.s
-
-CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o.requires:
-
-.PHONY : CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o.requires
-
-CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o.provides: CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o.requires
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o.provides.build
-.PHONY : CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o.provides
-
-CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o.provides.build: CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o
-
-
-CMakeFiles/path_planning.dir/src/helper.cpp.o: CMakeFiles/path_planning.dir/flags.make
-CMakeFiles/path_planning.dir/src/helper.cpp.o: ../src/helper.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eren/Desktop/Path-Planning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/path_planning.dir/src/helper.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path_planning.dir/src/helper.cpp.o -c /Users/eren/Desktop/Path-Planning/src/helper.cpp
-
-CMakeFiles/path_planning.dir/src/helper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path_planning.dir/src/helper.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eren/Desktop/Path-Planning/src/helper.cpp > CMakeFiles/path_planning.dir/src/helper.cpp.i
-
-CMakeFiles/path_planning.dir/src/helper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path_planning.dir/src/helper.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eren/Desktop/Path-Planning/src/helper.cpp -o CMakeFiles/path_planning.dir/src/helper.cpp.s
-
-CMakeFiles/path_planning.dir/src/helper.cpp.o.requires:
-
-.PHONY : CMakeFiles/path_planning.dir/src/helper.cpp.o.requires
-
-CMakeFiles/path_planning.dir/src/helper.cpp.o.provides: CMakeFiles/path_planning.dir/src/helper.cpp.o.requires
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/helper.cpp.o.provides.build
-.PHONY : CMakeFiles/path_planning.dir/src/helper.cpp.o.provides
-
-CMakeFiles/path_planning.dir/src/helper.cpp.o.provides.build: CMakeFiles/path_planning.dir/src/helper.cpp.o
-
-
-CMakeFiles/path_planning.dir/src/highway.cpp.o: CMakeFiles/path_planning.dir/flags.make
-CMakeFiles/path_planning.dir/src/highway.cpp.o: ../src/highway.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eren/Desktop/Path-Planning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/path_planning.dir/src/highway.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path_planning.dir/src/highway.cpp.o -c /Users/eren/Desktop/Path-Planning/src/highway.cpp
-
-CMakeFiles/path_planning.dir/src/highway.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path_planning.dir/src/highway.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eren/Desktop/Path-Planning/src/highway.cpp > CMakeFiles/path_planning.dir/src/highway.cpp.i
-
-CMakeFiles/path_planning.dir/src/highway.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path_planning.dir/src/highway.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eren/Desktop/Path-Planning/src/highway.cpp -o CMakeFiles/path_planning.dir/src/highway.cpp.s
-
-CMakeFiles/path_planning.dir/src/highway.cpp.o.requires:
-
-.PHONY : CMakeFiles/path_planning.dir/src/highway.cpp.o.requires
-
-CMakeFiles/path_planning.dir/src/highway.cpp.o.provides: CMakeFiles/path_planning.dir/src/highway.cpp.o.requires
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/highway.cpp.o.provides.build
-.PHONY : CMakeFiles/path_planning.dir/src/highway.cpp.o.provides
-
-CMakeFiles/path_planning.dir/src/highway.cpp.o.provides.build: CMakeFiles/path_planning.dir/src/highway.cpp.o
-
-
 CMakeFiles/path_planning.dir/src/main.cpp.o: CMakeFiles/path_planning.dir/flags.make
 CMakeFiles/path_planning.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eren/Desktop/Path-Planning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/path_planning.dir/src/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path_planning.dir/src/main.cpp.o -c /Users/eren/Desktop/Path-Planning/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eren/Desktop/Path-Planning-Project-very-last/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/path_planning.dir/src/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path_planning.dir/src/main.cpp.o -c /Users/eren/Desktop/Path-Planning-Project-very-last/src/main.cpp
 
 CMakeFiles/path_planning.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path_planning.dir/src/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eren/Desktop/Path-Planning/src/main.cpp > CMakeFiles/path_planning.dir/src/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eren/Desktop/Path-Planning-Project-very-last/src/main.cpp > CMakeFiles/path_planning.dir/src/main.cpp.i
 
 CMakeFiles/path_planning.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path_planning.dir/src/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eren/Desktop/Path-Planning/src/main.cpp -o CMakeFiles/path_planning.dir/src/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eren/Desktop/Path-Planning-Project-very-last/src/main.cpp -o CMakeFiles/path_planning.dir/src/main.cpp.s
 
 CMakeFiles/path_planning.dir/src/main.cpp.o.requires:
 
@@ -153,75 +81,43 @@ CMakeFiles/path_planning.dir/src/main.cpp.o.provides: CMakeFiles/path_planning.d
 CMakeFiles/path_planning.dir/src/main.cpp.o.provides.build: CMakeFiles/path_planning.dir/src/main.cpp.o
 
 
-CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o: CMakeFiles/path_planning.dir/flags.make
-CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o: ../src/trajectory_planner.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eren/Desktop/Path-Planning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o -c /Users/eren/Desktop/Path-Planning/src/trajectory_planner.cpp
+CMakeFiles/path_planning.dir/src/helper.cpp.o: CMakeFiles/path_planning.dir/flags.make
+CMakeFiles/path_planning.dir/src/helper.cpp.o: ../src/helper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eren/Desktop/Path-Planning-Project-very-last/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/path_planning.dir/src/helper.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path_planning.dir/src/helper.cpp.o -c /Users/eren/Desktop/Path-Planning-Project-very-last/src/helper.cpp
 
-CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eren/Desktop/Path-Planning/src/trajectory_planner.cpp > CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.i
+CMakeFiles/path_planning.dir/src/helper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path_planning.dir/src/helper.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eren/Desktop/Path-Planning-Project-very-last/src/helper.cpp > CMakeFiles/path_planning.dir/src/helper.cpp.i
 
-CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eren/Desktop/Path-Planning/src/trajectory_planner.cpp -o CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.s
+CMakeFiles/path_planning.dir/src/helper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path_planning.dir/src/helper.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eren/Desktop/Path-Planning-Project-very-last/src/helper.cpp -o CMakeFiles/path_planning.dir/src/helper.cpp.s
 
-CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o.requires:
+CMakeFiles/path_planning.dir/src/helper.cpp.o.requires:
 
-.PHONY : CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o.requires
+.PHONY : CMakeFiles/path_planning.dir/src/helper.cpp.o.requires
 
-CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o.provides: CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o.requires
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o.provides.build
-.PHONY : CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o.provides
+CMakeFiles/path_planning.dir/src/helper.cpp.o.provides: CMakeFiles/path_planning.dir/src/helper.cpp.o.requires
+	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/helper.cpp.o.provides.build
+.PHONY : CMakeFiles/path_planning.dir/src/helper.cpp.o.provides
 
-CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o.provides.build: CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o
-
-
-CMakeFiles/path_planning.dir/src/vehicle.cpp.o: CMakeFiles/path_planning.dir/flags.make
-CMakeFiles/path_planning.dir/src/vehicle.cpp.o: ../src/vehicle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/eren/Desktop/Path-Planning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/path_planning.dir/src/vehicle.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/path_planning.dir/src/vehicle.cpp.o -c /Users/eren/Desktop/Path-Planning/src/vehicle.cpp
-
-CMakeFiles/path_planning.dir/src/vehicle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/path_planning.dir/src/vehicle.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/eren/Desktop/Path-Planning/src/vehicle.cpp > CMakeFiles/path_planning.dir/src/vehicle.cpp.i
-
-CMakeFiles/path_planning.dir/src/vehicle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/path_planning.dir/src/vehicle.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/eren/Desktop/Path-Planning/src/vehicle.cpp -o CMakeFiles/path_planning.dir/src/vehicle.cpp.s
-
-CMakeFiles/path_planning.dir/src/vehicle.cpp.o.requires:
-
-.PHONY : CMakeFiles/path_planning.dir/src/vehicle.cpp.o.requires
-
-CMakeFiles/path_planning.dir/src/vehicle.cpp.o.provides: CMakeFiles/path_planning.dir/src/vehicle.cpp.o.requires
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/vehicle.cpp.o.provides.build
-.PHONY : CMakeFiles/path_planning.dir/src/vehicle.cpp.o.provides
-
-CMakeFiles/path_planning.dir/src/vehicle.cpp.o.provides.build: CMakeFiles/path_planning.dir/src/vehicle.cpp.o
+CMakeFiles/path_planning.dir/src/helper.cpp.o.provides.build: CMakeFiles/path_planning.dir/src/helper.cpp.o
 
 
 # Object files for target path_planning
 path_planning_OBJECTS = \
-"CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o" \
-"CMakeFiles/path_planning.dir/src/helper.cpp.o" \
-"CMakeFiles/path_planning.dir/src/highway.cpp.o" \
 "CMakeFiles/path_planning.dir/src/main.cpp.o" \
-"CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o" \
-"CMakeFiles/path_planning.dir/src/vehicle.cpp.o"
+"CMakeFiles/path_planning.dir/src/helper.cpp.o"
 
 # External object files for target path_planning
 path_planning_EXTERNAL_OBJECTS =
 
-path_planning: CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o
-path_planning: CMakeFiles/path_planning.dir/src/helper.cpp.o
-path_planning: CMakeFiles/path_planning.dir/src/highway.cpp.o
 path_planning: CMakeFiles/path_planning.dir/src/main.cpp.o
-path_planning: CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o
-path_planning: CMakeFiles/path_planning.dir/src/vehicle.cpp.o
+path_planning: CMakeFiles/path_planning.dir/src/helper.cpp.o
 path_planning: CMakeFiles/path_planning.dir/build.make
 path_planning: CMakeFiles/path_planning.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/eren/Desktop/Path-Planning/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable path_planning"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/eren/Desktop/Path-Planning-Project-very-last/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable path_planning"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/path_planning.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -229,12 +125,8 @@ CMakeFiles/path_planning.dir/build: path_planning
 
 .PHONY : CMakeFiles/path_planning.dir/build
 
-CMakeFiles/path_planning.dir/requires: CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o.requires
-CMakeFiles/path_planning.dir/requires: CMakeFiles/path_planning.dir/src/helper.cpp.o.requires
-CMakeFiles/path_planning.dir/requires: CMakeFiles/path_planning.dir/src/highway.cpp.o.requires
 CMakeFiles/path_planning.dir/requires: CMakeFiles/path_planning.dir/src/main.cpp.o.requires
-CMakeFiles/path_planning.dir/requires: CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o.requires
-CMakeFiles/path_planning.dir/requires: CMakeFiles/path_planning.dir/src/vehicle.cpp.o.requires
+CMakeFiles/path_planning.dir/requires: CMakeFiles/path_planning.dir/src/helper.cpp.o.requires
 
 .PHONY : CMakeFiles/path_planning.dir/requires
 
@@ -243,6 +135,6 @@ CMakeFiles/path_planning.dir/clean:
 .PHONY : CMakeFiles/path_planning.dir/clean
 
 CMakeFiles/path_planning.dir/depend:
-	cd /Users/eren/Desktop/Path-Planning/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/eren/Desktop/Path-Planning /Users/eren/Desktop/Path-Planning /Users/eren/Desktop/Path-Planning/cmake-build-debug /Users/eren/Desktop/Path-Planning/cmake-build-debug /Users/eren/Desktop/Path-Planning/cmake-build-debug/CMakeFiles/path_planning.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/eren/Desktop/Path-Planning-Project-very-last/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/eren/Desktop/Path-Planning-Project-very-last /Users/eren/Desktop/Path-Planning-Project-very-last /Users/eren/Desktop/Path-Planning-Project-very-last/cmake-build-debug /Users/eren/Desktop/Path-Planning-Project-very-last/cmake-build-debug /Users/eren/Desktop/Path-Planning-Project-very-last/cmake-build-debug/CMakeFiles/path_planning.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/path_planning.dir/depend
 

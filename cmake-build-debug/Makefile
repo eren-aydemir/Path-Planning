@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/eren/Desktop/Path-Planning
+CMAKE_SOURCE_DIR = /Users/eren/Desktop/Path-Planning-Project-very-last
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/eren/Desktop/Path-Planning/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/eren/Desktop/Path-Planning-Project-very-last/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eren/Desktop/Path-Planning/cmake-build-debug/CMakeFiles /Users/eren/Desktop/Path-Planning/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eren/Desktop/Path-Planning-Project-very-last/cmake-build-debug/CMakeFiles /Users/eren/Desktop/Path-Planning-Project-very-last/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eren/Desktop/Path-Planning/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/eren/Desktop/Path-Planning-Project-very-last/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,33 +123,6 @@ path_planning/fast:
 	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/build
 .PHONY : path_planning/fast
 
-src/behavior_planner.o: src/behavior_planner.cpp.o
-
-.PHONY : src/behavior_planner.o
-
-# target to build an object file
-src/behavior_planner.cpp.o:
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/behavior_planner.cpp.o
-.PHONY : src/behavior_planner.cpp.o
-
-src/behavior_planner.i: src/behavior_planner.cpp.i
-
-.PHONY : src/behavior_planner.i
-
-# target to preprocess a source file
-src/behavior_planner.cpp.i:
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/behavior_planner.cpp.i
-.PHONY : src/behavior_planner.cpp.i
-
-src/behavior_planner.s: src/behavior_planner.cpp.s
-
-.PHONY : src/behavior_planner.s
-
-# target to generate assembly for a file
-src/behavior_planner.cpp.s:
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/behavior_planner.cpp.s
-.PHONY : src/behavior_planner.cpp.s
-
 src/helper.o: src/helper.cpp.o
 
 .PHONY : src/helper.o
@@ -176,33 +149,6 @@ src/helper.s: src/helper.cpp.s
 src/helper.cpp.s:
 	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/helper.cpp.s
 .PHONY : src/helper.cpp.s
-
-src/highway.o: src/highway.cpp.o
-
-.PHONY : src/highway.o
-
-# target to build an object file
-src/highway.cpp.o:
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/highway.cpp.o
-.PHONY : src/highway.cpp.o
-
-src/highway.i: src/highway.cpp.i
-
-.PHONY : src/highway.i
-
-# target to preprocess a source file
-src/highway.cpp.i:
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/highway.cpp.i
-.PHONY : src/highway.cpp.i
-
-src/highway.s: src/highway.cpp.s
-
-.PHONY : src/highway.s
-
-# target to generate assembly for a file
-src/highway.cpp.s:
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/highway.cpp.s
-.PHONY : src/highway.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -231,60 +177,6 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/trajectory_planner.o: src/trajectory_planner.cpp.o
-
-.PHONY : src/trajectory_planner.o
-
-# target to build an object file
-src/trajectory_planner.cpp.o:
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.o
-.PHONY : src/trajectory_planner.cpp.o
-
-src/trajectory_planner.i: src/trajectory_planner.cpp.i
-
-.PHONY : src/trajectory_planner.i
-
-# target to preprocess a source file
-src/trajectory_planner.cpp.i:
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.i
-.PHONY : src/trajectory_planner.cpp.i
-
-src/trajectory_planner.s: src/trajectory_planner.cpp.s
-
-.PHONY : src/trajectory_planner.s
-
-# target to generate assembly for a file
-src/trajectory_planner.cpp.s:
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/trajectory_planner.cpp.s
-.PHONY : src/trajectory_planner.cpp.s
-
-src/vehicle.o: src/vehicle.cpp.o
-
-.PHONY : src/vehicle.o
-
-# target to build an object file
-src/vehicle.cpp.o:
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/vehicle.cpp.o
-.PHONY : src/vehicle.cpp.o
-
-src/vehicle.i: src/vehicle.cpp.i
-
-.PHONY : src/vehicle.i
-
-# target to preprocess a source file
-src/vehicle.cpp.i:
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/vehicle.cpp.i
-.PHONY : src/vehicle.cpp.i
-
-src/vehicle.s: src/vehicle.cpp.s
-
-.PHONY : src/vehicle.s
-
-# target to generate assembly for a file
-src/vehicle.cpp.s:
-	$(MAKE) -f CMakeFiles/path_planning.dir/build.make CMakeFiles/path_planning.dir/src/vehicle.cpp.s
-.PHONY : src/vehicle.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -294,24 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... path_planning"
-	@echo "... src/behavior_planner.o"
-	@echo "... src/behavior_planner.i"
-	@echo "... src/behavior_planner.s"
 	@echo "... src/helper.o"
 	@echo "... src/helper.i"
 	@echo "... src/helper.s"
-	@echo "... src/highway.o"
-	@echo "... src/highway.i"
-	@echo "... src/highway.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/trajectory_planner.o"
-	@echo "... src/trajectory_planner.i"
-	@echo "... src/trajectory_planner.s"
-	@echo "... src/vehicle.o"
-	@echo "... src/vehicle.i"
-	@echo "... src/vehicle.s"
 .PHONY : help
 
 
